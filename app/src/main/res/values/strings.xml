@@ -1,3 +1,7 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">BAMBA</string>
+=======
+    <string name="app_name">ElMercadito</string>
+>>>>>>> 6eb8369d0693609b50a623a290496b52ea58ba23
 </resources>

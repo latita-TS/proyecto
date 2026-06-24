@@ -31,7 +31,11 @@
                 android:id="@+id/tvNombreProducto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+<<<<<<< HEAD
                 android:textSize="15sp"
+=======
+                android:textSize="16sp"
+>>>>>>> 6eb8369d0693609b50a623a290496b52ea58ba23
                 android:textStyle="bold"
                 android:textColor="#212121"/>
 
@@ -52,6 +56,7 @@
                 android:textColor="#673AB7"
                 android:layout_marginTop="6dp"/>
 
+<<<<<<< HEAD
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -91,6 +96,8 @@
 
             </LinearLayout>
 
+=======
+>>>>>>> 6eb8369d0693609b50a623a290496b52ea58ba23
         </LinearLayout>
 
     </LinearLayout>

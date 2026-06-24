@@ -6,7 +6,11 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
+<<<<<<< HEAD
         android:label="Bamba"
+=======
+        android:label="El Mercadito"
+>>>>>>> 6eb8369d0693609b50a623a290496b52ea58ba23
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ElMercadito">
@@ -32,6 +36,7 @@
         <activity
             android:name=".RegistroActivity"
             android:exported="false"/>
+<<<<<<< HEAD
 
         <activity
             android:name=".ProductosCategoriaActivity"
@@ -48,5 +53,7 @@
         <activity
             android:name=".PerfilActivity"
             android:exported="false"/>
+=======
+>>>>>>> 6eb8369d0693609b50a623a290496b52ea58ba23
     </application>
 </manifest>

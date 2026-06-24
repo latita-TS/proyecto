@@ -2,6 +2,7 @@ package com.example.elmercadito
 
 import android.content.Intent
 import android.os.Bundle
+<<<<<<< HEAD
 import android.widget.CheckBox
 import android.widget.RadioGroup
 import android.widget.TextView
@@ -24,12 +25,28 @@ class RegistroActivity : AppCompatActivity() {
     private lateinit var tietPassword: TextInputEditText
     private lateinit var cbTerminos: CheckBox
     private lateinit var btnGuardar: MaterialButton
+=======
+import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.button.MaterialButton
+import com.google.android.material.textfield.TextInputEditText
+
+class RegistroActivity : AppCompatActivity() {
+
+    private lateinit var tietNombre: TextInputEditText
+    private lateinit var tietCorreo: TextInputEditText
+    private lateinit var tietTelefono: TextInputEditText
+    private lateinit var tietPassword: TextInputEditText
+    private lateinit var btnRegistrar: MaterialButton
+>>>>>>> 6eb8369d0693609b50a623a290496b52ea58ba23
     private lateinit var tvVolver: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registro)
 
+<<<<<<< HEAD
         tietDni = findViewById(R.id.tietDni)
         tietApellidoPaterno = findViewById(R.id.tietApellidoPaterno)
         tietApellidoMaterno = findViewById(R.id.tietApellidoMaterno)
@@ -105,6 +122,29 @@ class RegistroActivity : AppCompatActivity() {
                 finish()
             } else {
                 mostrarAlerta("Este correo ya está registrado")
+=======
+        tietNombre = findViewById(R.id.tietNombre)
+        tietCorreo = findViewById(R.id.tietCorreo)
+        tietTelefono = findViewById(R.id.tietTelefono)
+        tietPassword = findViewById(R.id.tietPassword)
+        btnRegistrar = findViewById(R.id.btnRegistrar)
+        tvVolver = findViewById(R.id.tvVolver)
+
+        btnRegistrar.setOnClickListener {
+            val nombre = tietNombre.text.toString().trim()
+            val correo = tietCorreo.text.toString().trim()
+            val telefono = tietTelefono.text.toString().trim()
+            val password = tietPassword.text.toString().trim()
+
+            if (nombre.isEmpty() || correo.isEmpty() ||
+                telefono.isEmpty() || password.isEmpty()) {
+                Toast.makeText(this, "Completa todos los campos porfavor", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "Ya creaste tu cuenta", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, LoginActivity::class.java)
+                startActivity(intent)
+                finish()
+>>>>>>> 6eb8369d0693609b50a623a290496b52ea58ba23
             }
         }
 
@@ -112,6 +152,7 @@ class RegistroActivity : AppCompatActivity() {
             finish()
         }
     }
+<<<<<<< HEAD
 
     private fun mostrarAlerta(mensaje: String) {
         AlertDialog.Builder(this)
@@ -120,4 +161,6 @@ class RegistroActivity : AppCompatActivity() {
             .setPositiveButton("OK", null)
             .show()
     }
+=======
+>>>>>>> 6eb8369d0693609b50a623a290496b52ea58ba23
 }

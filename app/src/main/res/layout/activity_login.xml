@@ -24,7 +24,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:text="Mercadito Bamba"
+=======
+            android:text="El Mercadito"
+>>>>>>> 6eb8369d0693609b50a623a290496b52ea58ba23
             android:textSize="28sp"
             android:textStyle="bold"
             android:textColor="#FFFFFF"
@@ -73,7 +77,10 @@
                 android:textColor="#9E9E9E"
                 android:layout_marginTop="4dp"/>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6eb8369d0693609b50a623a290496b52ea58ba23
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

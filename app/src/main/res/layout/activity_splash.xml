@@ -22,7 +22,11 @@
         android:id="@+id/tvNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:text="Mercadito Bamba"
+=======
+        android:text="El Mercadito"
+>>>>>>> 6eb8369d0693609b50a623a290496b52ea58ba23
         android:textColor="#FFFFFF"
         android:textSize="32sp"
         android:textStyle="bold"
